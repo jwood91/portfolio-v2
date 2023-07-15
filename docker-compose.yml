@@ -2,12 +2,10 @@ version: "3.7"
 
 services:
   frontend:
-    build: ./portfolio-v2
+    build: ./client
     volumes:
-    - ./portfolio-v2:/frontend
-    - node_modules:/frontend/node_modules
+      - ./client:/client
+      - /client/node_modules
     ports: 
       - "3000:3000"
       - "24678:24678"
-volumes:
-  node_modules:
