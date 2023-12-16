@@ -1,0 +1,12 @@
+# .dockerignore
+# Ignore node_modules as it will be mounted from the host
+node_modules/
+
+# Ignore files related to version control
+.git/
+.gitignore
+README.md
+# Ignore development and runtime files
+.DS_Store
+npm-debug.log
+yarn-error.log
