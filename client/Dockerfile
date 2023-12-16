@@ -1,6 +1,6 @@
-FROM node:18
+FROM node:18.19
 
-WORKDIR /client
+WORKDIR /app
 
 COPY . .
 

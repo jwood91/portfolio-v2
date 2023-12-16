@@ -10,7 +10,11 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.10.1",
     "@types/node": "^18.16.19",
     "nuxt": "^3.6.2"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.8.0"
   }
 }
