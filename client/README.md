@@ -79,7 +79,7 @@ docker-compose build --no-cache
 # Bring Up the container
 docker-compose up -d
 
-# npm run dev - Command within Docker
+# npm run dev - Command within Docker to Start the Site.
 docker-compose run --rm frontend npm run dev
 
 
