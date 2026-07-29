@@ -23,7 +23,6 @@
 }
 .main-content {
   flex-grow: 1;
-  padding: 2rem 1rem;
 }
 .site-footer {
   text-align: center;
