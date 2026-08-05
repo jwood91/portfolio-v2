@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import VueTypewriterEffect from "vue-typewriter-effect";
 // In Nuxt 4, defineComponent, ref, and computed are automatically imported.
 // The array must live inside the script context so the template can see it.
 const items = [
@@ -9,13 +10,21 @@ const items = [
   'https://picsum.photos/468/468?random=5',
   'https://picsum.photos/468/468?random=6'
 ]
+
+const isReady = ref(false)
+
+onMounted(() => {
+  // 2. Flip the switch only after the component is completely mounted
+  isReady.value = true
+})
 </script>
 
 <template>
   <div>
     <div class="hero-container">
       <div class="hero-content-container">
-        <h1 class="font-bold text-blue-600"> Hello, my name is Joe, I am a web developer </h1>
+        <vue-typewriter-effect v-show="isReady" :strings="['Hello, my name is Joe, I am a web developer']" />
+        <h1 class="font-bold text-blue-600"> </h1>
         <div class="circle-image"></div>    
       </div>    
     </div>
@@ -53,5 +62,17 @@ const items = [
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+:deep(.Typewriter__wrapper) {
+    font-size: 40px;
+}
+
+:deep(#typewriter) {
+      max-width: 400px;
+}
+
+:deep(.Typewriter__cursor) {
+    font-size: 40px;
 }
 </style>
