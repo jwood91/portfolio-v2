@@ -25,6 +25,8 @@
   flex-grow: 1;
 }
 .site-footer {
+  background-color: white;
+  color: #4b5563;
   text-align: center;
   padding: 1rem;
   border-top: 1px solid #e5e7eb;
