@@ -8,6 +8,7 @@ const techStack = [
   { name: 'TypeScript', icon: 'i-simple-icons-typescript', color: 'group-hover:text-[#3178C6]' },
   { name: 'PHP', icon: 'i-simple-icons-php', color: 'group-hover:text-[#777BB4]' },
   { name: 'JavaScript', icon: 'i-simple-icons-javascript', color: 'group-hover:text-[#F7DF1E]' },
+  { name: 'Git', icon: 'i-simple-icons-git', color: 'group-hover:text-[#F05032]' },
   { name: 'Docker', icon: 'i-simple-icons-docker', color: 'group-hover:text-[#2496ED]' },
   { name: 'WordPress', icon: 'i-simple-icons-wordpress', color: 'group-hover:text-[#21759B]' },
   { name: 'Bedrock', icon: 'i-simple-icons-roots', color: 'group-hover:text-[#525DDC]' },
