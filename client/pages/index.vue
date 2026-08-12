@@ -20,7 +20,7 @@ onMounted(() => { isReady.value = true })
 </script>
 
 <template>
-  <div>
+  <div> 
     <div class="hero-container mx-auto w-full flex flex-col justify-between items-center overflow-hidden select-none">
       
       <div class="mx-auto w-full max-w-[1200px] flex-1 min-h-0 p-4 sm:p-8 flex flex-col-reverse md:flex-row justify-center md:justify-between items-center gap-4 sm:gap-6 md:gap-8">
@@ -61,13 +61,25 @@ onMounted(() => { isReady.value = true })
       </div>
 
     </div>
-  </div>
+      <div class="about-container py-4 mx-auto w-full flex flex-col justify-between items-center overflow-hidden select-none gap-5 bg-white">
+        <UCard class="flex flex-col max-w-[1200px] bg-white border border-solid flex-1 p-4 items-center gap-4 text-black">
+          <template #header>
+            <h2 class="text-5xl">About</h2>
+          </template>
+
+          <p class="text-4xl text-center">I am a web developer based in the Melbourne area currently looking for opportunities.  I have Over 4 Years experience as a Full Stack Web Developer using an array of different web technologies.</p>
+
+          <template #footer>
+            <UButton to="/projects" icon="i-lucide-rocket" size="xl" class="bg-default text-white hover:cursor-pointer hover:text-[#0f172b] hover:bg-white hover:border hover:border-[#0f172b] hover:border-solid hover:border-" variant="solid">See My Projects</UButton>
+          </template>
+      </UCard>
+    </div>
+  </div>  
 </template>
 
 <style scoped>
 .hero-container {
   height: calc(100vh - 57px);
-  height: calc(100dvh - 57px);
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
     url('~/assets/images/coding-image.png');
